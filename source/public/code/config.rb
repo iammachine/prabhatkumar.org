@@ -19,3 +19,6 @@ require 'compass/import-once/activate'
 http_path 		= "/"
 project_path 	= File.expand_path(File.join(File.dirname(__FILE__), '/'))
 sass_dir      = "assets/sass"
+
+# To enable relative paths to assets via compass helper functions.
+relative_assets = true
