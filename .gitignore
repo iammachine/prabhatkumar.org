@@ -6,6 +6,10 @@
 *.sass-cache
 *.scssc
 
+# sublime text
+*.sublime-workspace
+
+# gitignore for Node.js®
 # Logs
 logs
 *.log
