@@ -1,3 +1,11 @@
+# Basic gitignore
+.DS_Store
+
+# SASS gitignore
+.sass-cache
+*.sass-cache
+*.scssc
+
 # Logs
 logs
 *.log
