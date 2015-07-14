@@ -13,3 +13,8 @@
 
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
+
+
+# Set this to the root of your project when deployed:
+http_path 		= "/"
+project_path 	= File.expand_path(File.join(File.dirname(__FILE__), '/'))
