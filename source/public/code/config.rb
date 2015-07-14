@@ -22,3 +22,7 @@ sass_dir      = "assets/sass"
 
 # To enable relative paths to assets via compass helper functions.
 relative_assets = true
+
+# selected preferred output style here (can be overridden via the command line):
+# output_style = :expanded or :nested or :compact or :compressed
+output_style = :expanded
