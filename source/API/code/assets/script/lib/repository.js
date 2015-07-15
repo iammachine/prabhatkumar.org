@@ -40,3 +40,21 @@ function noop(callback) {
     callback(null);
   });
 }
+
+function clean(outputPath) {
+  return function(callback) {
+    fs.exists(outputPath, function(exists) {
+      if (!exists) {
+        callback(null);
+        return;
+      }
+      fs.remove(outputPath, function(err) {
+        if (err) {
+          callback(err);
+          return;
+        }
+        callback(null);
+      });
+    });
+  };
+}
