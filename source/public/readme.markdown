@@ -2,4 +2,4 @@
 
 From the desk of Prabhat Kumar
 
-**Copyright** © 2015 Prabhat Kumar. All rights reserved.
+**Copyright** © 2015, [Prabhat Kumar](http://prabhatkumar.org/). All rights reserved.
