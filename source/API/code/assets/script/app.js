@@ -22,3 +22,8 @@ var options = {
  key:  fs.readFileSync('keys/api.key'),
  cert: fs.readFileSync('keys/api_prabhatkumar_org.crt')
 };
+
+var app          = express();
+module.exports   = app;
+
+app.set('config', require('./config'));
