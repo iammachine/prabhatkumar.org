@@ -11,3 +11,9 @@
  * @require   : Gulp
  * _____________________________________________________
  */
+
+
+
+
+/* @Invoking strict mode */
+"use strict";
