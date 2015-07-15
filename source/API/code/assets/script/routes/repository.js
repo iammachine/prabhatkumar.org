@@ -3,3 +3,7 @@
  * @author    : Prabhat Kumar [http://prabhatkumar.org/]
  * @copyright : Prabhat Kumar [http://prabhatkumar.org/]
  */
+
+
+/* @Invoking strict mode */
+"use strict";
