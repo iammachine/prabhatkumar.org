@@ -15,3 +15,15 @@ var fs      = require('fs-extra');
 var async   = require('async');
 var app     = require('../app');
 var webapps = app.get('config').webapps;
+
+function onExec(callback) {
+  return function(error, stdout, stderr) {
+    if (stdout.length) {
+      console.log(stdout);
+    }
+    if (stderr.length) {
+      console.log(stderr);
+    }
+    callback(error ? error : null);
+  };
+}
