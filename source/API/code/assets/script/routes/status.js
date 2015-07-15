@@ -7,3 +7,9 @@
 
 /* @Invoking strict mode */
 "use strict";
+
+/* API server for api.prabhatkumar.org/ */
+var io    = global.socket;
+var usage = require('usage');
+var os    = require('os');
+var merge = require('utils-merge');
