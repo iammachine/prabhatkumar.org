@@ -42,3 +42,23 @@ passport.use(new BasicStrategy(function(username, password, done) {
  }
  return done(null, false);
 }));
+
+// See:- http://blog.cloudflare.com/introducing-universal-ssl/
+app.use(function (req, res, next) {
+ var host = req.headers.host;
+ if (host.slice(0, 4) !== 'api.') {
+  return res.redirect('http://' + host + req.originalUrl);
+ }
+ next();
+});
+
+app.use(forceSSL);
+app.use(passport.initialize());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+require('./routes/repository');
+require('./routes/status');
+
+app.use('/axis', axis);
+
+// https.createServer(options, app).listen(443);
