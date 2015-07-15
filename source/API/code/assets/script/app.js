@@ -17,3 +17,8 @@ var passport      = require('passport');
 var BasicStrategy = require('passport-http').BasicStrategy;
 var forceSSL      = require('express-force-ssl');
 var bodyParser    = require('body-parser');
+/* API Server Options. */
+var options = {
+ key:  fs.readFileSync('keys/api.key'),
+ cert: fs.readFileSync('keys/api_prabhatkumar_org.crt')
+};
