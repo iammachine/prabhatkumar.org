@@ -8,3 +8,9 @@ markup:
   - name: Haml
   - name: Markdown
   - name: yml
+style:
+  - name: Sass
+  - name: Compass
+  - name: Breakpoint
+  - name: rose-normalize-sass
+  - name: CSS3.0
