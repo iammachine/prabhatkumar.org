@@ -1,6 +1,7 @@
 /*!
  * api.prabhatkumar.org® [v0.0.1]
  * @author    : Prabhat Kumar [http://prabhatkumar.org/]
+ * @copyright : Prabhat Kumar [http://prabhatkumar.org/]
  */
  
 
@@ -27,3 +28,17 @@ var app          = express();
 module.exports   = app;
 
 app.set('config', require('./config'));
+
+// @passport.use
+passport.use(new BasicStrategy(function(username, password, done) {
+ var config = app.get('config');
+ if (config.accounts) {
+  for (var i = 0; i < config.accounts.length; i++) {
+   var account = config.accounts[i];
+   if (account.username === username && account.password === password) {
+    return done(null, account);
+   }
+  }
+ }
+ return done(null, false);
+}));
