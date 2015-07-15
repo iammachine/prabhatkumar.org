@@ -7,3 +7,8 @@
 
 /* @Invoking strict mode */
 "use strict";
+
+/* API server for api.prabhatkumar.org/ */
+var app        = require('../app');
+var passport   = require('passport');
+var repository = require('../lib/repository');
