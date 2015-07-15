@@ -58,3 +58,15 @@ function clean(outputPath) {
     });
   };
 }
+
+function copy(cwd, outputPath) {
+  return function(callback) {
+    fs.copy(cwd, outputPath, function(err) {
+      if (err) {
+        callback(err);
+        return;
+      }
+      callback(null);
+    });
+  };
+}
