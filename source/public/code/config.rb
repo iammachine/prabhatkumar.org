@@ -8,6 +8,9 @@
 # @require   : Ruby [v2.2.2]
 # @require   : Sass - Selective Steve [3.4.15]
 # @require   : Compass - Polaris [1.0.3]
+# @require   : Breakpoint
+# @require   : Builder
+# @require   : Typogruby
 # ============================================
 
 
@@ -15,6 +18,7 @@ require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 require 'breakpoint'
 require 'builder'
+require 'typogruby'
 
 
 # Set this to the root of your project when deployed:
