@@ -14,3 +14,10 @@ style:
   - name: Breakpoint
   - name: rose-normalize-sass
   - name: CSS3.0
+behavior:
+  - name: Modernizr
+  - name: D3
+approach:
+  - name: Responsive Design
+principles:
+  - name: Progressive Enhancement
