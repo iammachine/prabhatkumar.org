@@ -34,3 +34,9 @@ function execSeries(command, cwd) {
     exec(command, {cwd: cwd}, onExec(callback));
   };
 }
+
+function noop(callback) {
+  process.nextTick(function() {
+    callback(null);
+  });
+}
