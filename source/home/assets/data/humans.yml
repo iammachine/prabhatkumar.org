@@ -3,3 +3,8 @@ team:
     role: Technical Architect
     email: prabhat.senior@gmail.com
     twitter: @PrabhatSenior
+markup:
+  - name: HTML5.1
+  - name: Haml
+  - name: Markdown
+  - name: yml
