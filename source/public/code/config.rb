@@ -13,11 +13,13 @@
 
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
+require 'breakpoint'
+require 'builder'
 
 
 # Set this to the root of your project when deployed:
-http_path 		= "/"
-project_path 	= File.expand_path(File.join(File.dirname(__FILE__), '/'))
+http_path     = "/"
+project_path  = File.expand_path(File.join(File.dirname(__FILE__), '/'))
 sass_dir      = "assets/sass"
 
 # To enable relative paths to assets via compass helper functions.
