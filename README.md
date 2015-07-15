@@ -5,4 +5,4 @@ http://prabhatkumar.org/
 [![Node.js](https://img.shields.io/badge/Node.js-v0.12.5-brightgreen.svg)](https://nodejs.org/)
 
 
-**Copyright** © 2015 Prabhat Kumar. All rights reserved.
+**Copyright** © 2015, [Prabhat Kumar](http://prabhatkumar.org/). All rights reserved.
