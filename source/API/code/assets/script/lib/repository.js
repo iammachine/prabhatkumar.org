@@ -27,3 +27,10 @@ function onExec(callback) {
     callback(error ? error : null);
   };
 }
+
+function execSeries(command, cwd) {
+  return function(callback) {
+    console.log(command);
+    exec(command, {cwd: cwd}, onExec(callback));
+  };
+}
